@@ -1,0 +1,202 @@
+/* menghilangkan margin dan padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    height : 70px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+header {
+    display : flex;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+nav ul {
+    display : flex;
+    list-style-type: none;
+    margin-right: 50px;
+    padding-top: 20px;
+}
+
+nav li {
+    border: .5px solid;
+    border-right: none;
+    padding: 5px 20px;
+}
+
+nav li:hover {
+    background-color: lightblue;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+nav ul li:last-child {
+    border-right: .5px solid;   
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.hero {
+    border-bottom: 1px solid;
+    min-height: 600px;
+}
+.hero button {
+    padding: 5px;
+    border-style: .5px solid;
+    border-radius: 3px;
+}
+
+.hero button:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.parallax {
+    background-image: url('https://img.freepik.com/free-vector/seamless-geometric-pattern-gray-background-vector_53876-136679.jpg?ga=GA1.1.1076434362.1723651246&semt=ais_hybrid');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.position{
+    padding-top: 30px;
+    margin-left: 120px;
+    }
+
+.fac {
+    border-bottom: 1px solid;
+}
+
+.fac div svg{
+    height: 150px;
+}
+
+.facdiv {
+    padding: 20px 30px 30px 50px;
+    display: flex;
+    /* background-color: blue; */
+}
+
+.facdiv div{
+    margin-right: 80px;
+    text-align: center;
+}
+.message {
+    display: flex;
+    justify-content: space-between;
+}
+.contact{
+    padding: 20px 30px 30px 120px;
+    min-height: 400px;
+    min-width: 40%;
+
+}
+.contact p{
+    color: crimson;
+    margin-left: 7rem;
+    font-size: small;
+    margin-top: -5px;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: baseline;
+}
+
+.form-group label {
+    min-width: 100px;
+    margin-right: 2px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    flex: 1;
+    margin-left: 5px;
+    min-height: 30px;
+    border-radius: 5px;
+}
+
+.submit {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.submit:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.hasil{
+    margin: 100px;
+    text-align: start;
+    border: 1px solid; 
+    width: 500px;
+    border-radius: 5px;
+}
+
+.mapping{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.map {
+    padding-left: 10px;
+    display: flex;
+    margin-left: 20px;  
+}
+
+.map h4{
+    margin: 0 ;
+}
+
+.mapping h4{
+    margin: 0 ;
+}
+.map p {
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.mapping p {
+    margin-left: 10px;
+    margin-top: 0;
+}
+.pad{
+    padding-top: 20px;
+}
+
+footer {
+    border-top: 1px solid;
+    text-align: end;
+    padding: 20px;
+}
+
+/* ---- reset ---- body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } ---- particles.js container ---- #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #b61924; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } ---- stats.js ---- .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; } */
