@@ -67,14 +67,28 @@ nav ul li:last-child {
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
-.parallax {
-    background-image: url('https://img.freepik.com/free-vector/seamless-geometric-pattern-gray-background-vector_53876-136679.jpg?ga=GA1.1.1076434362.1723651246&semt=ais_hybrid');
-    height: 100%; 
+
+.banner-image {
+    margin-top: 50px;
+    height: 600px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
+
+
+.image-1 {
+    background-image: url('https://img.freepik.com/free-vector/seamless-geometric-pattern-gray-background-vector_53876-136679.jpg?ga=GA1.1.1076434362.1723651246&semt=ais_hybrid');
+}
+
+.image-2 {
+    background-image: url('https://img.freepik.com/free-photo/white-grey-tile-wall-high-resolution-wallpaper-brick-seamless-texture-interior-background_1258-72185.jpg?t=st=1724862262~exp=1724865862~hmac=b3852384e1197b793c31d1f6b9c14f7fa00b59ccfda3d21da48834d8d4d47ebe&w=740');
+}
+
+.image-3 {
+    background-image: url('https://img.freepik.com/free-vector/geometrical-seamless-rounded-diagonal-stripe-pattern-background-vector-graphic-design_1164-1383.jpg?ga=GA1.1.1076434362.1723651246&semt=ais_hybrid');
+}
 
 .position{
     padding-top: 30px;
@@ -93,6 +107,10 @@ nav ul li:last-child {
     padding: 20px 30px 30px 50px;
     display: flex;
     /* background-color: blue; */
+}
+
+.profile{
+    width: 180px;
 }
 
 .facdiv div{
@@ -199,4 +217,74 @@ footer {
     padding: 20px;
 }
 
-/* ---- reset ---- body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } ---- particles.js container ---- #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #b61924; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } ---- stats.js ---- .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; } */
+@media only screen and (max-width: 768px) {
+
+    header img {
+        width: 10%;
+    }
+
+    .hero {
+        min-height: 400px; /* Menurunkan tinggi minimum untuk perangkat yang lebih kecil */
+    }
+
+    .position {
+        top: 40%; /* Menyesuaikan posisi konten agar tetap terlihat baik */
+        padding: 0 20px; /* Memberikan sedikit ruang pada sisi kiri dan kanan */
+    }
+
+    .banner-image {
+        background-attachment: scroll; /* Memastikan background tidak terlalu besar */
+    }
+
+    .facdiv {
+        flex-direction: column;
+    }
+
+    .message {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    header {
+        flex-direction: column;
+    }
+    header img {
+        width: 20%;
+        padding-left: 35%;
+    }
+
+    .hero {
+        min-height: 300px; /* Menurunkan tinggi minimum untuk perangkat yang lebih kecil */
+    }
+
+    .position {
+      margin: 0;
+
+        padding: 0 20px; /* Memberikan sedikit ruang pada sisi kiri dan kanan */
+    }
+
+    .banner-image {
+        background-attachment: scroll; /* Memastikan background tidak terlalu besar */
+    }
+
+    .facdiv {
+        flex-direction: column;
+        padding-left: 20%;
+    }
+
+    .message {
+        flex-direction: column;
+    }
+
+    .contact {
+        padding: 0;
+        min-height: 400px;
+        min-width: 100%;
+    }
+    .hasil {
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+    }
+}
